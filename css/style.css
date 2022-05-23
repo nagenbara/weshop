@@ -1,0 +1,81 @@
+body{
+	font-family:arial;
+	font-size:12px;
+	color:blue;
+	background:#F7F7F7;
+	margin:0px;
+}
+
+div#menu {background: #1e5474;padding: 5px 10px;overflow: hidden;}
+
+div#header {margin-top: 20px;}
+
+div#container {width: 1100px;height: auto;margin: 0px auto;padding: 20px;}
+
+div#user {float: left;color: white;}
+
+#user a {color: white;padding-left: 5px;margin-top: 5px;display: inline-block;text-decoration: none;}
+
+a#button-keranjang {float: right;background: orange;padding: 2px 10px;border-radius: 5px;}
+
+#button-keranjang img {vertical-align: bottom;}
+
+div#footer {background: #1e5474;padding: 10px;}
+
+#footer p {color: white;text-align: right;font-size: 10px;font-style: italic;margin: 0px;}
+
+#container #content {padding: 10px 0px;overflow: hidden;}
+
+div#container-user-akses {width: 350px;height: auto;margin: 50px auto;}
+
+.element-form {margin: 15px;}
+
+.element-form label {display: block;font-weight: bold;color: black;}
+
+.element-form span {display: block;}
+
+.element-form span input[type="email"], 
+.element-form span input[type="text"],
+.element-form span input[type="password"],
+.element-form span textarea, 
+.element-form span select {width: 100%;padding: 5px; box-sizing: border-box;}
+
+
+input[type="submit"] {background: #1e5474;padding: 7px 30px;color: white;border-radius: 5px;font-size: 10px; cursor:pointer;}
+
+input[type="submit"]:hover{
+		background:orange;
+	}
+
+.notif {background: red;color: white;padding: 10px;margin-bottom: 10px;}
+
+#container #header #menu #user {color: white;}
+
+div#bg-page\=profile {overflow: hidden;}
+
+div#menu-profile {float: left;width: 245px;background: #1e5474;}
+
+#menu-profile ul {margin: 0px;padding: 0px;list-style: none;}
+
+#menu-profile ul li a {display: block;color: white;we: none;padding: 10px 20px;text-decoration: none;}
+
+#menu-profile ul li a:hover,
+#menu-profile ul li a.active{
+	background:orange;
+}
+
+div#profile-content {float: left;width: 835px;padding: 10px;background: white;}
+
+table.table-list {color: black;text-decoration: none;text-align: center;border: 1px solid;width: 100%;border-collapse: collapse;}
+
+table.table-list a {text-decoration: none;color: black;}
+
+tr.header-table {background: #1e5474;border-collapse: collapse;color: orange;}
+
+td {border: 1px solid;}
+
+td a:hover{
+	background:orange;
+}
+
+a.tombol-action {float: right;color: white;text-decoration: none;margin: 10px 1px;background: #1e4574;}
