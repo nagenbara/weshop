@@ -1,21 +1,32 @@
 <?php
 	
 	$barang_id = isset($_GET['barang_id']) ? $_GET['barang_id'] : false;
+	
+	
+	$nama_barang = "";
 	$spesifikasi = "";
 	$stok = "";
+	$kategori_id = "";
 	$harga = "";
 	$nama_barang = "";
 	$status = "";
 	$button = "Add";
 
-	// if($barang_id){
-		// $querybarang = mysqli_query($koneksi, "SELECT * FROM barang WHERE barang_id='$barang_id'");
-		// $row = mysqli_fetch_assoc($querybarang);
+	if($barang_id){
+		$querybarang = mysqli_query($koneksi, "SELECT * FROM barang WHERE barang_id='$barang_id'");
+		$row = mysqli_fetch_assoc($querybarang);
 		
-	// $barang = $row['barang'];
-	// $status = $row['status'];
-	// $button = "Update";
-	// }
+	$nama_barang = $row['nama_barang'];
+	$kategori_id = $row['kategori_id'];
+	$spesifikasi = $row['spesifikasi'];
+	$gambar = $row['gambar'];
+	$harga = $row['harga'];
+	$stok = $row['stok'];
+	$status = $row['status'];
+	$button = "Update";
+	
+	$gambar = "<img src='".BASE_URL."images/barang/$gambar' style='width: 200px; vertical-align: middle;'/>";
+	}
 
 ?>
 
@@ -32,7 +43,11 @@
 					
 						$query = mysqli_query($koneksi, "SELECT kategori_id, kategori FROM kategori WHERE status='on' ORDER BY kategori ASC");
 						while($row=mysqli_fetch_assoc($query)){
+							if($kategori_id == $row['kategori_id']){
+							echo "<option value='$row[kategori_id]' selected='true'>$row[kategori]</option>";
+						}	else {
 							echo "<option value='$row[kategori_id]'>$row[kategori]</option>";
+						}
 						}
 					?>
 				</select>
@@ -64,7 +79,7 @@
 	
 	<div class="element-form">
 			<label>Gambar Produk</label>
-			<span><input type="file" name="file"/></span>
+			<span><input type="file" name="file"/> <?php echo $gambar; ?></span>
 	</div>	
 	
 	

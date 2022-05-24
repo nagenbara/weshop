@@ -4,10 +4,15 @@
 	include_once("function/koneksi.php");
 	include_once("function/helper.php");
 	$page = isset($_GET['page']) ? $_GET['page'] : false;
+	$kategori_id = isset($_GET['kategori_id']) ? $_GET['kategori_id'] : false;
 	
 	$user_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : false;
 	$nama = isset($_SESSION['nama']) ? $_SESSION['nama'] : false;
 	$level = isset($_SESSION['level']) ? $_SESSION['level'] : false;
+	$keranjang = isset($_SESSION['keranjang']) ? $_SESSION['keranjang'] : array();
+	$totalBarang = count($keranjang);
+	
+	
 	
 	?>
 	
@@ -18,6 +23,12 @@
 		<head> 
 			<title>Weshop | Barang-Barang Elektronik</title>
 			<link href="<?php echo BASE_URL. "css/style.css"; ?>" type="text/css" rel="stylesheet" />
+			<link href="<?php echo BASE_URL. "css/banner.css"; ?>" type="text/css" rel="stylesheet" />
+			
+			<script src="<?php echo BASE_URL. "js/jquery-3.6.0.min.js"; ?>"></script>
+			<script src="<?php echo BASE_URL. "js/Slides-SlidesJS-3/source/jquery.slides.min.js"; ?>"></script>
+			
+  
 		</head>
 	
 		<body>
@@ -46,6 +57,11 @@
 						</div>
 						<a href="<?php echo BASE_URL. "index.php?page=keranjang"; ?>" id="button-keranjang">
 							<img src="<?php echo BASE_URL."images/cart.png"; ?>" />
+							<?php
+								if($totalBarang != 0){
+								echo "<span class='total-barang'>$totalBarang</span>";
+								}
+							?>
 						</a>
 					</div>
 				</div>
@@ -58,7 +74,7 @@
 						if(file_exists($filename)){
 							include_once($filename);
 						}else{
-							echo "Maaf, Tujuan tidak tersedia";
+							include_once("main.php");
 						}
 					?>
 				

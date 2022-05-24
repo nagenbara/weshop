@@ -79,3 +79,91 @@ td a:hover{
 }
 
 a.tombol-action {float: right;color: white;text-decoration: none;margin: 10px 1px;background: #1e4574;}
+
+div#kiri {float: left;height: auto;width: 245px;}
+
+div#menu-kategori {}
+
+#menu-kategori ul {list-style: none;margin: 0px;padding: 0px;}
+
+#menu-kategori ul li {margin-bottom: 5px;}
+
+#menu-kategori ul li a {display: block;padding: 10px;background: white;color: #1e4574;text-decoration: none;}
+
+#menu-kategori ul li a:hover,
+#menu-kategori ul li a.active{ background:#e8e8e8;}
+
+div#kanan {width: 840px;margin-left: 15px;height: auto;float: left;}
+
+#kanan ul {list-style: none;margin: 0px;padding: 0px;overflow: hidden;}
+
+#kanan ul li {width: 240px;background: white;padding: 10px 15px;margin-bottom: 15px;margin-right: 15px;float: left;}
+
+#kanan ul li p.price {font-size: 15px;font-weight: bold;text-align: right;margin-bottom: 10px;}
+
+#kanan #frame-barang ul li a img {display: block;width: 240px;}
+
+#kanan #frame-barang ul li .keterangan-gambar {border-top: 1px solid #E6E6E6;border-bottom: 1px solid #E6E6E6;padding: 10px 0px;height: 50px;}
+
+#kanan #frame-barang ul li .keterangan-gambar p {text-align: center;margin: 5px 0px;}
+
+#kanan #frame-barang ul li .keterangan-gambar p a {font-weight: bold;text-decoration: none;}
+
+#kanan #frame-barang ul li .keterangan-gambar span {display: block;text-align: center;}
+
+#kanan #frame-barang ul li .button-add-cart {text-align: center;}
+
+#kanan #frame-barang ul li .button-add-cart a {background: #1e5474;color: white;text-decoration: none;padding: 5px 10px;display: inline-block;margin-top: 10px;border-radius: 3px;}
+
+#kanan #frame-barang ul li .button-add-cart a:hover,
+#kanan #frame-barang ul li .button-add-cart a.active{background:orange;} 
+
+#detail-barang {background: white;padding: 15px;}
+
+#detail-barang h2 {margin-top: 0px;color: blue;font-size: xx-large;}
+
+#detail-barang #frame-gambar {background: grey;padding: 20px;}
+
+#detail-barang #frame-gambar img {display: block;margin: 0px auto;}
+
+#detail-barang #frame-harga {margin: 15px 0px;}
+
+#detail-barang #frame-harga span {font-size: 15px;font-weight: bold;color: red;}
+
+#detail-barang #frame-harga a {background: #1e5474;color: white;text-decoration: none;padding: 5px 10px;display: inline-block;float: right;border-radius FONT-VARIANT: JIS83;}
+
+#detail-barang #frame-harga a:hover{ background:orange;} 
+
+#detail-barang #keterangan {margin: 20px 0px;color: black;}
+
+.total-barang {color: white;text-decoration: none;font-size: 19px;vertical-align: top;font-weight: bold;}
+
+.update-quantity {width: 30px;text-align: center;}
+
+.table-list tr {border-bottom: 1px solid #1e5474;}
+
+.table-list {width: 100%;border-collapse: collapse;}
+
+.table-list tr.baris-title {background: #E6E6E6;}
+
+
+
+.kanan.hapus_item a {position: absolute;top: 0px;right: 0px;text-decoration: none;color: #1e5474;}
+
+.kanan.hapus_item {position: relative;}
+
+#frame-button-keranjang a {background: #1e4574; color:white; text-decoration: none; padding:7px 20px; display: inline-block; margin-top: 15px;}
+
+#lanjut-belanja { float: left;}
+
+#lanjut-pemesanan {float: right;}
+
+#frame-data-pengiriman { float: left; width: 500px; margin-right:20px; margin-left:10px;}
+
+#frame-data-detail { float: left; width: 500px;}
+
+#frame-detail-order { border:1px solid grey;}
+
+#frame-form-pengiriman { border: 1px solid grey; padding: 25px;}
+
+h3.label-data-pengiriman {border: 1px solid grey; padding: 10px 7px; margin:0px;}

@@ -26,7 +26,7 @@
 		
 		<div class="element-form">
 			<label>Email</label>
-			<span><input type="email" name="email" /></span>
+			<span><input type="text" name="email" /></span>
 		</div>
 		
 		
