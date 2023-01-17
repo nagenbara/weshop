@@ -1,6 +1,6 @@
 <?php
 
-	define("BASE_URL", "https://toko-online-weshop111.herokuapp.com/");
+	define("BASE_URL", "http://localhost:8080/weshop v2/toko-online-weshop111/");
 
 	$arrayStatuspesanan[0] = "Menunggu Pembayaran";
 	$arrayStatuspesanan[1] = "Pembayaran Sedang divalidasi";

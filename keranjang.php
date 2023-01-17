@@ -21,14 +21,14 @@
 		foreach($keranjang AS $key => $value){
 			$barang_id = $key;
 			$nama_barang = $value["nama_barang"];
-			$quantity = $value["quantity"];
+			$quantity =  (is_numeric($value["quantity"]) || $value["quantity"] == 0?$value["quantity"]:1);
 			$harga = $value["harga"];
 			$gambar = $value["gambar"];
 			
 			$total = $quantity * $harga;
 			$subtotal = $subtotal + $total;
 			
-			echo "<tr>
+			echo "<tr> 
 					<td class='tengah'>$no</td>
 					<td class='kiri'><img src='".BASE_URL."images/barang/$gambar' height='100px' /></td>
 					<td class='kiri'>$nama_barang</td>
@@ -69,7 +69,7 @@
 
 <script>
 
-	$(".update-quantity").on("input", function(e)){
+	$(".update-quantity").on("input", function(e){
 		var barang_id = $(this).attr("name");
 		var value = $(this).val();
 		
@@ -80,9 +80,9 @@
 			data: "barang_id="+barang_id+"&value="+value
 			
 		})
-		.done(function(data)){
-			location.reload{}
+		.done(function(data){
+			location.reload()
 		})
-	}
+	})
 
 </script>

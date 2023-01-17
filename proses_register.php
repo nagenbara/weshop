@@ -30,4 +30,5 @@
 			$password = md5 ($password);
 	mysqli_query($koneksi, "INSERT INTO user (level, nama, email, alamat, phone, password, status) 
 										VALUES ('$level', '$nama_lengkap', '$email', '$alamat', '$phone', '$password', '$status')");
+			header("location:".BASE_URL."index.php?page=register&notif=success");
 		}

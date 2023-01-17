@@ -46,7 +46,7 @@
 								<img src='". BASE_URL. "images/barang/$row[gambar]'/>
 							</a>
 							<div class='keterangan-gambar'>
-								<p><a href='". BASE_URL. "index.php?page=detail&barang_id=$row[nama_barang]'>$row[nama_barang]</a></p>
+								<p><a href='". BASE_URL. "index.php?page=detail&barang_id=$row[barang_id]'>$row[nama_barang]</a></p>
 								<span>Stok : $row[stok]</span>
 							</div>
 							<div class='button-add-cart'>

@@ -81,7 +81,7 @@
 				</div>
 				<div id="footer">
 					<p>copyright weshop 2022</p>
-				</div?
+				</div>
 			
 			</div>
 			

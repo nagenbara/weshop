@@ -31,6 +31,9 @@
 			else if ($notif == "email"){
 			echo "<div class='notif'>Maaf, Email sudah pernah digunakan</div>";
 			}
+			else if ($notif == "success"){
+			echo "<div class='success'>Akun Berhasil Dibuat!</div>";
+			}
 		?>
 	
 		<div class="element-form">

@@ -1,8 +1,8 @@
 <?php
 
-	$server = "remotemysql.com";
-	$username = "AOTErMuPpp";
-	$password = "fqqcJmw62I";
-	$database = "AOTErMuPpp";
+	$server = "localhost";
+	$username = "root";
+	$password = "";
+	$database = "weshop";
 
 	$koneksi = mysqli_connect($server, $username, $password, $database) or die ("Gagal Terhubung");
